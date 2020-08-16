@@ -1,32 +1,72 @@
+html,
 body {
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 54, 36, 0.938);
+  background-color: darkgreen;
 }
 
-main {
+#wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#opponentFace {
-  font-size: 12vh;
-}
-#opponentDeck,
-#playerDeck {
-  height: 20vh;
+#opponent-face {
+  font-size: 15vh;
 }
 
-#discardedCards {
-  margin: 5vh 0px;
+#opponent-deck,
+#player-deck {
+  height: 21vh;
 }
-.deck {
-  background-color: #ffffff;
+
+#opponent-deck > * {
+  margin-right: 35vw;
+}
+
+#player-deck > * {
+  margin-left: 35vw;
+}
+
+#discard-pile {
+  margin: 4vh 0px;
+}
+
+.card {
   border-radius: 5px;
-  width: 10vh;
-  height: 15vh;
+  background-color: #ffffff;
+  width: 15vh;
+  height: 21vh;
 }
-.back {
-  background: radial-gradient(#fff, rgba(255, 10, 22, 0.7));
+
+.card-back {
+  background: radial-gradient(#1e2e5f, #9198e5);
+}
+
+.card-front {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vh;
+}
+
+.right-side-up {
+  position: absolute;
+  left: 0.4vh;
+  top: 0.4vh;
+  text-align: center;
+}
+
+.flipped {
+  position: absolute;
+  right: 0.4vh;
+  bottom: 0.4vh;
+  text-align: center;
+  transform: rotate(180deg);
+}
+
+.card-art {
+  display: flex;
+  flex-flow: row wrap;
 }

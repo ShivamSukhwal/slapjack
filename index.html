@@ -1,26 +1,24 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="index.css" type="text/css" />
-    <title>Slapjack</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <main>
-      <div id="opponentFace">: - D</div>
-      <div id="opponentDeck">
-        <div class="deck back"></div>
+    <div id="wrapper">
+      <div id="opponent-face">🙂</div>
+      <div id="opponent-deck">
+        <div class="card card-back"></div>
       </div>
-      <div id="discardedCards">
-        <div class="deck front">
-          <div class="deck-number"></div>
-          <div class="deck-art"></div>
-          <div class="deck-number"></div>
+      <div id="discard-pile">
+        <div class="card card-front">
+          <div class="card-number"></div>
+          <div class="card-art"></div>
+          <div class="card-number"></div>
         </div>
       </div>
-      <div id="playerDeck">
-        <div class="deck back"></div>
+      <div id="player-deck">
+        <div class="card card-back"></div>
       </div>
-    </main>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
